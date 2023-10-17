@@ -1,0 +1,195 @@
+-- PLAY_VEHICLE_DOOR_CLOSE_SOUND
+PlayVehicleDoorCloseSound(
+	vehicle --[[ Vehicle ]], 
+	doorIndex --[[ integer ]]
+)
+
+-- PLAY_VEHICLE_DOOR_OPEN_SOUND
+PlayVehicleDoorOpenSound(
+	vehicle --[[ Vehicle ]], 
+	doorIndex --[[ integer ]]
+)
+
+-- RECORD_BROKEN_GLASS
+RecordBrokenGlass(
+	x --[[ number ]], 
+	y --[[ number ]], 
+	z --[[ number ]], 
+	radius --[[ number ]]
+)
+
+-- SET_ANIMAL_MOOD
+SetAnimalMood(
+	animal --[[ Ped ]], 
+	mood --[[ integer ]]
+)
+
+-- SET_PLAYER_ANGRY
+SetPlayerAngry(
+	ped --[[ Ped ]], 
+	toggle --[[ boolean ]]
+)
+
+-- SET_RADIO_AUTO_UNFREEZE
+SetRadioAutoUnfreeze(
+	toggle --[[ boolean ]]
+)
+
+-- SET_RADIO_FRONTEND_FADE_TIME
+SetRadioFrontendFadeTime(
+	fadeTime --[[ number ]]
+)
+
+-- _SET_RADIO_STATION_IS_VISIBLE
+SetRadioStationIsVisible(
+	radioStation --[[ string ]], 
+	toggle --[[ boolean ]]
+)
+
+-- SET_RADIO_STATION_MUSIC_ONLY
+SetRadioStationMusicOnly(
+	radioStation --[[ string ]], 
+	toggle --[[ boolean ]]
+)
+
+-- SET_RADIO_TO_STATION_INDEX
+SetRadioToStationIndex(
+	radioStation --[[ integer ]]
+)
+
+-- SET_RADIO_TO_STATION_NAME
+SetRadioToStationName(
+	stationName --[[ string ]]
+)
+
+-- SET_RADIO_TRACK
+SetRadioTrack(
+	radioStation --[[ string ]], 
+	radioTrack --[[ string ]]
+)
+
+-- _SET_RADIO_TRACK_MIX
+SetRadioTrackMix(
+	radioStationName --[[ string ]], 
+	mixName --[[ string ]], 
+	p2 --[[ integer ]]
+)
+
+-- SET_VEHICLE_RADIO_LOUD
+SetVehicleRadioLoud(
+	vehicle --[[ Vehicle ]], 
+	toggle --[[ boolean ]]
+)
+
+-- ADD_PETROL_DECAL
+local retval --[[ integer ]] =
+	AddPetrolDecal(
+		x --[[ number ]], 
+		y --[[ number ]], 
+		z --[[ number ]], 
+		groundLvl --[[ number ]], 
+		width --[[ number ]], 
+		transparency --[[ number ]]
+	)
+
+-- _ADD_OIL_DECAL
+local retval --[[ integer ]] =
+	AddOilDecal(
+		x --[[ number ]], 
+		y --[[ number ]], 
+		z --[[ number ]], 
+		groundLvl --[[ number ]], 
+		width --[[ number ]], 
+		transparency --[[ number ]]
+	)
+
+-- FREE_MEMORY_FOR_HIGH_QUALITY_PHOTO
+FreeMemoryForHighQualityPhoto()
+
+-- FREE_MEMORY_FOR_MISSION_CREATOR_PHOTO
+FreeMemoryForMissionCreatorPhoto()
+
+-- _REGISTER_NOIR_SCREEN_EFFECT_THIS_FRAME
+RegisterNoirScreenEffectThisFrame()
+
+-- PLAY_PED_RINGTONE
+PlayPedRingtone(
+	ringtoneName --[[ string ]], 
+	ped --[[ Ped ]], 
+	p2 --[[ boolean ]]
+)
+
+-- IS_COP_VEHICLE_IN_AREA_3D
+local retval --[[ boolean ]] =
+	IsCopVehicleInArea_3d(
+		x1 --[[ number ]], 
+		x2 --[[ number ]], 
+		y1 --[[ number ]], 
+		y2 --[[ number ]], 
+		z1 --[[ number ]], 
+		z2 --[[ number ]]
+	)
+
+-- ENABLE_VEHICLE_EXHAUST_POPS
+EnableVehicleExhaustPops(
+	vehicle --[[ Vehicle ]], 
+	toggle --[[ boolean ]]
+)
+
+-- _PRELOAD_VEHICLE_AUDIO
+PreloadVehicleAudio(
+	model --[[ Hash ]]
+)
+
+-- _FORCE_VEHICLE_ENGINE_AUDIO
+ForceVehicleEngineAudio(
+	vehicle --[[ Vehicle ]], 
+	audioName --[[ string ]]
+)
+
+-- CONTROL_LANDING_GEAR
+ControlLandingGear(
+	vehicle --[[ Vehicle ]], 
+	state --[[ integer ]]
+)
+
+Works for vehicles with a retractable landing gear  
+landing gear states:  
+0: Deployed  
+1: Closing  
+2: Opening  
+3: Retracted
+
+-- SET_FORKLIFT_FORK_HEIGHT
+SetForkliftForkHeight(
+	vehicle --[[ Vehicle ]], 
+	height --[[ number ]]
+)
+
+0.0 = Lowest 1.0 = Highest. This is best to be used if you wanna pick-up a car since un-realistically on GTA V forklifts can't pick up much of anything due to vehicle mass. If you put this under a car then set it above 0.0 to a 'lifted-value' it will raise the car with no issue lol
+
+-- SET_VEHICLE_BRAKE
+SetVehicleBrake(
+	vehicle --[[ Vehicle ]], 
+	toggle --[[ boolean ]]
+)
+
+-- SET_VEHICLE_BRAKE_LIGHTS
+SetVehicleBrakeLights(
+	vehicle --[[ Vehicle ]], 
+	toggle --[[ boolean ]]
+)
+
+-- SET_VEHICLE_LIGHT_MULTIPLIER
+SetVehicleLightMultiplier(
+	vehicle --[[ Vehicle ]], 
+	multiplier --[[ number ]]
+)
+
+-- SET_VEHICLE_SEARCHLIGHT
+SetVehicleSearchlight(
+	heli --[[ Vehicle ]], 
+	toggle --[[ boolean ]], 
+	canBeUsedByAI --[[ boolean ]]
+)
+
